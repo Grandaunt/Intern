@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!--圆形图片-->
+  <declare-styleable name="RoundedImageView">
+    <attr name="riv_corner_radius" format="dimension" />
+    <attr name="riv_corner_radius_top_left" format="dimension" />
+    <attr name="riv_corner_radius_top_right" format="dimension" />
+    <attr name="riv_corner_radius_bottom_left" format="dimension" />
+    <attr name="riv_corner_radius_bottom_right" format="dimension" />
+    <attr name="riv_border_width" format="dimension" />
+    <attr name="riv_border_color" format="color" />
+    <attr name="riv_mutate_background" format="boolean" />
+    <attr name="riv_oval" format="boolean" />
+    <attr name="android:scaleType" />
+    <attr name="riv_tile_mode">
+      <enum name="clamp" value="0" />
+      <enum name="repeat" value="1" />
+      <enum name="mirror" value="2" />
+    </attr>
+    <attr name="riv_tile_mode_x">
+      <enum name="clamp" value="0" />
+      <enum name="repeat" value="1" />
+      <enum name="mirror" value="2" />
+    </attr>
+    <attr name="riv_tile_mode_y">
+      <enum name="clamp" value="0" />
+      <enum name="repeat" value="1" />
+      <enum name="mirror" value="2" />
+    </attr>
+  </declare-styleable>
+
+  <!--右上角标签-->
+  <declare-styleable name="LabelView">
+    <attr name="label_distance" format="dimension" />
+    <attr name="label_height" format="dimension"/>
+    <attr name="label_backgroundColor" format="color"/>
+    <attr name="label_text" format="string"/>
+    <attr name="label_textSize" format="dimension" />
+    <attr name="label_textColor" format="color"/>
+    <attr name="label_visual" format="boolean"/>
+    <attr name="label_orientation" format="enum">
+      <enum name="LEFT_TOP" value="1"/>
+      <enum name="RIGHT_TOP" value="2"/>
+      <enum name="LEFT_BOTTOM" value="3"/>
+      <enum name="RIGHT_BOTTOM" value="4"/>
+    </attr>
+  </declare-styleable>
+
+
+
+  <declare-styleable name="TagGroup">
+    <!-- Whether the tag group is in append mode. -->
+    <attr name="atg_isAppendMode" format="boolean" />
+    <!-- If the tag group is in append mode, what the hint of input tag. -->
+    <attr name="atg_inputHint" format="string" />
+
+    <!-- The tag view outline border color. -->
+    <attr name="atg_borderColor" format="color" />
+    <!-- The tag view text color. -->
+    <attr name="atg_textColor" format="color" />
+    <!-- The tag view background color. -->
+    <attr name="atg_backgroundColor" format="color" />
+
+    <!-- The dash outline border color, when in append mode. -->
+    <attr name="atg_dashBorderColor" format="color" />
+    <!-- The input tag hint text color, when in append mode. -->
+    <attr name="atg_inputHintColor" format="color" />
+    <!-- The input tag type text color, when in append mode. -->
+    <attr name="atg_inputTextColor" format="color" />
+
+    <!-- The checked tag view outline border color. -->
+    <attr name="atg_checkedBorderColor" format="color" />
+    <!-- The checked text color. -->
+    <attr name="atg_checkedTextColor" format="color" />
+    <!-- The checked marker color. -->
+    <attr name="atg_checkedMarkerColor" format="color" />
+    <!-- The checked tag view background color. -->
+    <attr name="atg_checkedBackgroundColor" format="color" />
+
+    <!-- The tag view background color, when the tag view is being pressed. -->
+    <attr name="atg_pressedBackgroundColor" format="color" />
+
+    <!-- The tag view outline border stroke width. -->
+    <attr name="atg_borderStrokeWidth" format="dimension" />
+    <!-- The tag view text size. -->
+    <attr name="atg_textSize" format="dimension" />
+
+    <attr name="atg_horizontalSpacing" format="dimension" />
+    <attr name="atg_verticalSpacing" format="dimension" />
+    <attr name="atg_horizontalPadding" format="dimension" />
+    <attr name="atg_verticalPadding" format="dimension" />
+  </declare-styleable>
+
+  <declare-styleable name="Themes">
+    <attr name="tagGroupStyle" format="reference" />
+  </declare-styleable>
+
+
+  <declare-styleable name="RoundedLetterView">
+    <attr name="rlv_titleText" format="string" />
+    <attr name="rlv_titleSize" format="dimension" />
+    <attr name="rlv_titleColor" format="color" />
+    <attr name="rlv_backgroundColorValue" format="color" />
+  </declare-styleable>
+</resources>

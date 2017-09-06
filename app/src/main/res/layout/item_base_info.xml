@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/text_view_margin"
+    android:background="@drawable/view_linear"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_alop_practice_office_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_view_margin"
+            android:minWidth="200dp"
+            android:text="职位名称: "
+            android:textColor="@color/gray3" />
+        <TextView
+            android:id="@+id/text_alop_practice_people_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_view_margin"
+            android:minWidth="200dp"
+            android:text="招聘人数: "
+            android:textColor="@color/gray3" />
+
+        <TextView
+            android:id="@+id/text_alop_practice_treatment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_view_margin"
+            android:minWidth="200dp"
+            android:text="公司待遇: "
+            android:textColor="@color/gray3" />
+
+        <TextView
+            android:id="@+id/text_alop_practice_claim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_view_margin"
+            android:minWidth="200dp"
+            android:text="职位要求: "
+            android:textColor="@color/gray3" />
+
+
+    <TextView
+        android:id="@+id/text_alop_practice_post_claim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_view_margin"
+        android:minWidth="200dp"
+        android:text="岗位职责: "
+        android:textColor="@color/gray3" />
+
+    <TextView
+    android:id="@+id/text_alop_practice_welfare"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/text_view_margin"
+    android:layout_weight="1"
+    android:minWidth="200dp"
+    android:text="实习福利:"
+    android:textColor="@color/gray3" />
+
+    </LinearLayout>
+

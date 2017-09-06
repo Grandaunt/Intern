@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="1dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_four"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_title_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="我的"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_38" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/view_fm_info"
+                android:layout_width="match_parent"
+                android:layout_height="125.5dp"
+                android:background="@drawable/view_linear"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/activity_horizontal_margin">
+
+                    <TextView
+                        android:id="@+id/text_fm_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="木易杨"
+                        android:textColor="@color/gray3"
+                        android:textSize="@dimen/sp_50" />
+
+                    <TextView
+                        android:id="@+id/text_fm_nick_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12.5dp"
+                        android:text="你是智障吧"
+                        android:textSize="@dimen/sp_30"
+                        android:textColor="@color/gray9" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/iv_fm_icon"
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_user"
+                   />
+                <ImageView
+                    android:layout_height="match_parent"
+                    android:layout_width="50dp"
+                    android:src="@mipmap/ic_right"
+                    android:padding="20dp"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@drawable/view_linear"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+                <LinearLayout
+                    android:id="@+id/text_fm_resume"
+                    android:layout_height="@dimen/dp_sg"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_height="25dp"
+                        android:layout_width="25dp"
+                        android:src="@mipmap/ic_plan"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        />
+                    <TextView
+
+                        android:layout_height="@dimen/dp_sg"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="我的简历"
+                        android:textColor="@color/gray3"
+                        android:textSize="@dimen/sp_32"
+                        />
+
+                    <ImageView
+                        android:layout_height="14.5dp"
+                        android:layout_width="14.5dp"
+                        android:src="@mipmap/ic_right"
+                        />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/background_material_light" />
+
+                <LinearLayout
+                    android:id="@+id/text_fm_apply"
+                    android:layout_height="@dimen/dp_sg"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_height="25dp"
+                        android:layout_width="25dp"
+                        android:src="@mipmap/ic_apply"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        />
+                    <TextView
+
+                        android:layout_height="@dimen/dp_sg"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="我的申请"
+                        android:textColor="@color/gray3"
+                        android:textSize="@dimen/sp_32"
+                        />
+
+                    <ImageView
+                        android:layout_height="14.5dp"
+                        android:layout_width="14.5dp"
+                        android:src="@mipmap/ic_right"
+                        />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/graye" />
+            <LinearLayout
+                android:id="@+id/text_fm_collect"
+                android:layout_height="@dimen/dp_sg"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_height="25dp"
+                    android:layout_width="25dp"
+                    android:src="@mipmap/ic_coll_f"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                 />
+                <TextView
+                    android:layout_height="@dimen/dp_sg"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="我的收藏"
+                    android:textColor="@color/gray3"
+                    android:textSize="@dimen/sp_32"
+                 />
+
+                <ImageView
+                    android:layout_height="14.5dp"
+                    android:layout_width="14.5dp"
+                    android:src="@mipmap/ic_right"
+                    />
+           </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/graye" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@drawable/view_linear"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+                <LinearLayout
+                    android:id="@+id/text_fm_internship"
+                    android:layout_height="@dimen/dp_sg"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_height="25dp"
+                        android:layout_width="25dp"
+                        android:src="@mipmap/ic_intern"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        />
+                    <TextView
+
+                        android:layout_height="@dimen/dp_sg"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="我的实习"
+                        android:textColor="@color/gray3"
+                        android:textSize="@dimen/sp_32"
+                        />
+
+                    <ImageView
+                        android:layout_height="14.5dp"
+                        android:layout_width="14.5dp"
+                        android:src="@mipmap/ic_right"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/graye" />
+
+                <LinearLayout
+                    android:id="@+id/text_fm_cricle"
+                    android:layout_height="@dimen/dp_sg"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_height="25dp"
+                        android:layout_width="25dp"
+                        android:src="@mipmap/ic_cricle_f"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        />
+                    <TextView
+
+                        android:layout_height="@dimen/dp_sg"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="我的圈子"
+                        android:textColor="@color/gray3"
+                        android:textSize="@dimen/sp_32"
+                        />
+
+                    <ImageView
+                        android:layout_height="14.5dp"
+                        android:layout_width="14.5dp"
+                        android:src="@mipmap/ic_right"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@drawable/view_linear"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+                <LinearLayout
+                    android:id="@+id/text_fm_setting"
+                    android:layout_height="@dimen/dp_sg"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_height="25dp"
+                        android:layout_width="25dp"
+                        android:src="@mipmap/ic_setting"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        />
+                    <TextView
+
+                        android:layout_height="@dimen/dp_sg"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="设置"
+                        android:textColor="@color/gray3"
+                        android:textSize="@dimen/sp_32"
+                        />
+
+                    <ImageView
+                        android:layout_height="14.5dp"
+                        android:layout_width="14.5dp"
+                        android:src="@mipmap/ic_right"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/background_material_light" />
+                >
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/graye"
+    tools:context="com.example.win.newintern3.UI.FourModule.MyInternActivity">
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_linear"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+            <LinearLayout
+                android:id="@+id/text_fm_journal"
+                android:layout_height="@dimen/dp_sg"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_height="25dp"
+                    android:layout_width="25dp"
+                    android:src="@mipmap/ic_my_rz"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    />
+                <TextView
+
+                    android:layout_height="@dimen/dp_sg"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="我的日志"
+                    android:textColor="@color/gray3"
+                    android:textSize="@dimen/sp_32"
+                    />
+
+                <ImageView
+                    android:layout_height="14.5dp"
+                    android:layout_width="14.5dp"
+                    android:src="@mipmap/ic_right"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/graye" />
+            <LinearLayout
+                android:id="@+id/text_fm_weekly"
+                android:layout_height="@dimen/dp_sg"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_height="25dp"
+                    android:layout_width="25dp"
+                    android:src="@mipmap/ic_my_wk"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    />
+                <TextView
+
+                    android:layout_height="@dimen/dp_sg"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="我的周报"
+                    android:textColor="@color/gray3"
+                    android:textSize="@dimen/sp_32"
+                    />
+
+                <ImageView
+                    android:layout_height="14.5dp"
+                    android:layout_width="14.5dp"
+                    android:src="@mipmap/ic_right"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/text_fm_questions"
+                android:layout_height="@dimen/dp_sg"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_height="25dp"
+                    android:layout_width="25dp"
+                    android:src="@mipmap/ic_my_q"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    />
+                <TextView
+
+                    android:layout_height="@dimen/dp_sg"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="我的问答"
+                    android:textColor="@color/gray3"
+                    android:textSize="@dimen/sp_32"
+                    />
+
+                <ImageView
+                    android:layout_height="14.5dp"
+                    android:layout_width="14.5dp"
+                    android:src="@mipmap/ic_right"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/text_fm_leave"
+                android:layout_height="@dimen/dp_sg"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_height="25dp"
+                    android:layout_width="25dp"
+                    android:src="@mipmap/ic_my_b"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    />
+                <TextView
+
+                    android:layout_height="@dimen/dp_sg"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="我的请假"
+                    android:textColor="@color/gray3"
+                    android:textSize="@dimen/sp_32"
+                    />
+
+                <ImageView
+                    android:layout_height="14.5dp"
+                    android:layout_width="14.5dp"
+                    android:src="@mipmap/ic_right"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_fm_businesstrip"
+                android:layout_height="@dimen/dp_sg"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_height="25dp"
+                    android:layout_width="25dp"
+                    android:src="@mipmap/ic_my_l"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    />
+                <TextView
+
+                    android:layout_height="@dimen/dp_sg"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="我的出差"
+                    android:textColor="@color/gray3"
+                    android:textSize="@dimen/sp_32"
+                    />
+
+                <ImageView
+                    android:layout_height="14.5dp"
+                    android:layout_width="14.5dp"
+                    android:src="@mipmap/ic_right"
+                    />
+            </LinearLayout>
+       </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windows_background"
+    android:orientation="vertical"
+    tools:context="com.example.win.newintern3.UI.FourModule.EditMyselfInfoActivity">
+    <include layout="@layout/toolbar"/>
+    <EditText
+        android:id="@+id/et_edit_myself_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="start"
+        android:hint="详细描述一下你自己，字数控制在10-800 字"
+        android:minHeight="200dp"
+        android:padding="10dp"
+        android:textColor="@color/gray6"
+        android:textColorHint="@color/grayc"
+        android:textSize="@dimen/sp_28" />
+</LinearLayout>

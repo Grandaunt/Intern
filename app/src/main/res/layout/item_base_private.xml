@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?><!--实习培训Item-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="13dp"
+        android:orientation="horizontal">
+
+        <!--<cn.czhj.intern.Widgets.roundedimageview.RoundedImageView-->
+            <!--android:id="@+id/item_train_icon"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:src="@mipmap/ic_logo"-->
+            <!--app:riv_corner_radius="5dp"-->
+            <!--app:riv_mutate_background="true"-->
+            <!--app:riv_oval="false"-->
+            <!--app:riv_tile_mode="clamp" />-->
+
+        <ImageView
+            android:layout_height="60dp"
+            android:layout_width="60dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_com_logo"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toEndOf="@+id/item_train_icon"
+        android:layout_toRightOf="@+id/item_train_icon">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_train_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016计算机暑期实习"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="4dp"
+                android:layout_toLeftOf="@+id/item_train_time"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_train_company_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@+id/item_train_time"
+                    android:drawablePadding="8dp"
+                    android:maxLines="3"
+                    android:text="中国互联网有限公司"
+                    android:textColor="@color/gray9" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_train_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+
+                    android:text="2016-01-26~2016-07-26"
+                    android:textColor="@color/gray9" />
+
+                <!--<TextView-->
+                    <!--android:id="@+id/item_train_people_num"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignBottom="@+id/item_train_company_other"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_marginLeft="4dp"-->
+                    <!--android:text="人数:2人"-->
+                    <!--android:textColor="@color/gray9" />-->
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
+<!--<cn.czhj.intern.Widgets.Label.LabelTextView-->
+    <!--android:id="@+id/label"-->
+    <!--android:layout_width="60dp"-->
+    <!--android:layout_height="60dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="16dp"-->
+    <!--android:textColor="#ffffff"-->
+    <!--app:label_backgroundColor="#66cc33"-->
+    <!--app:label_distance="28dp"-->
+    <!--app:label_orientation="RIGHT_TOP"-->
+    <!--app:label_text="已申请"-->
+    <!--app:label_textSize="10sp"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_alignParentEnd="true" />-->
+
+</RelativeLayout>

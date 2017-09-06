@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.win.newintern3.UI.MainModule.AIntern.AskForLeaveActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@color/grayb"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:background="@color/white"
+                    android:layout_marginTop="0.2dp"
+                    android:layout_marginBottom="0.2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请假人"
+                        android:textColor="@android:color/black" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/text_asfl_leaveofabsence"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="某某某"
+                        android:textColorHint="@color/grayb"
+                        android:textColor="@color/gray5"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:background="@color/white"
+                    android:layout_marginBottom="0.2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="实习企业"
+                        android:textColor="@android:color/black" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                    <EditText
+                        android:id="@+id/text_asfl_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="某公司"
+                        android:gravity="center_vertical|right"
+                        android:textColorHint="@color/grayb"
+                        android:textColor="@color/gray5"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:background="@color/white"
+                    android:layout_marginBottom="0.2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开始时间"
+                        android:textColor="@android:color/black" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/text_asfl_starttime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="请选择开始时间"
+                        android:gravity="center_vertical|right"
+                        android:drawablePadding="8dp"
+                        android:textColorHint="@color/grayb"
+                        android:textColor="@color/gray5"
+                        android:drawableRight="@mipmap/ic_right"
+                        android:textSize="14sp"
+                        />
+                    <!--<ImageButton-->
+                    <!--android:layout_height="15dp"-->
+                    <!--android:layout_width="16dp"-->
+                    <!--android:paddingLeft="8dp"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:src="@mipmap/ic_right"-->
+                    <!--android:background="@color/white"/>-->
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:background="@color/white"
+                    android:layout_marginBottom="0.2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="结束时间"
+                        android:textColor="@android:color/black" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/text_asfl_endtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColorHint="@color/grayb"
+                        android:textColor="@color/gray5"
+                        android:background="@null"
+                        android:gravity="center_vertical|right"
+                        android:hint="请选择结束时间"
+                        android:drawablePadding="8dp"
+                        android:drawableRight="@mipmap/ic_right"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:background="@color/white"
+                    android:layout_marginBottom="0.2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="去向 "
+                        android:textColor="@android:color/black" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/text_asfl_goon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="请填写去向"
+                        android:gravity="center_vertical|right"
+                        android:textColorHint="@color/grayb"
+                        android:textColor="@color/gray5"
+                        android:textSize="14sp"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:background="@color/white"
+                    android:layout_marginBottom="0.2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联系方式 "
+                        android:textColor="@android:color/black" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/text_asfl_tel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="请填写联系方式"
+                        android:gravity="center_vertical|right"
+                        android:inputType="phone"
+                        android:textColorHint="@color/grayb"
+                        android:textColor="@color/gray5"
+                        android:textSize="14sp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_height="wrap_content"
+                android:background="@color/grayb"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="0.2dp"
+                    android:layout_marginBottom="0.2dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:padding="15dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请假事由"
+                        android:paddingBottom="13dp"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:background="@color/grayb" />
+
+
+                    <EditText
+                        android:id="@+id/text_asfl_body"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="start"
+                        android:hint="请输入请假事由，10-150字"
+                        android:minHeight="160dp"
+                        android:paddingTop="13dp"
+                        android:textColorHint="@color/grayb"
+                        android:textColor="@color/gray5"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--<Button-->
+            <!--android:id="@+id/btn_asfl_submit"-->
+            <!--style="?android:attr/borderlessButtonStyle"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="52dp"-->
+            <!--android:layout_margin="32dp"-->
+            <!--android:background="@drawable/login_in_button"-->
+            <!--android:text="提交"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="20sp" />-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

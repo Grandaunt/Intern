@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_checked="true" android:drawable="@mipmap/ic_jj_focused" ></item>
+    <item android:state_checked="false" android:drawable="@mipmap/ic_jj_normal"></item>
+
+
+</selector>

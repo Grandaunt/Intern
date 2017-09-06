@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.win.newintern3.UI.FourModule.EditUserBaseInfoActivity">
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/activity_horizontal_margin"-->
+                <!--android:background="@drawable/view_linear"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:paddingLeft="8dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:text="  头像"-->
+                        <!--android:textColor="@android:color/black" />-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content">-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/img_auir_icon"-->
+                            <!--android:padding="2dp"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_toLeftOf="@+id/imageView4"-->
+                            <!--android:layout_toStartOf="@+id/imageView4"-->
+                            <!--android:scaleType="fitEnd"-->
+                            <!--android:src="@mipmap/ic_user" />-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/imageView4"-->
+                            <!--android:layout_width="16dp"-->
+                            <!--android:layout_height="16dp"-->
+                            <!--android:layout_alignParentEnd="true"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:src="@mipmap/ic_right" />-->
+
+                    <!--</RelativeLayout>-->
+
+
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1px"-->
+                    <!--android:background="@color/grayc" />-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="名字"
+                        android:textColor="@android:color/black" />
+
+                    <EditText
+                        android:id="@+id/edit_auir_name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical|right"
+                        android:hint="请填写"
+                        android:inputType="text"
+                        android:paddingRight="14dp"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        tools:ignore="RtlHardcoded" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/grayc" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="性别"
+                        android:textColor="@android:color/black" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_auir_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="14dp"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radio1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="男" />
+
+                        <RadioButton
+                            android:id="@+id/radio2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="女" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/grayc" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="行业方向"
+                        android:textColor="@android:color/black" />
+
+                    <EditText
+                        android:id="@+id/edit_auir_industry_direction"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical|right"
+                        android:hint="请填写"
+                        android:inputType="text"
+                        android:paddingRight="14dp"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        tools:ignore="RtlHardcoded" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/grayc" />
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:paddingLeft="8dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="*公司"-->
+                        <!--android:textColor="@android:color/black" />-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/edit_auir_company"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:background="@null"-->
+                        <!--android:gravity="center_vertical|right"-->
+                        <!--android:hint="请填写"-->
+                        <!--android:inputType="text"-->
+                        <!--android:paddingRight="14dp"-->
+                        <!--android:singleLine="true"-->
+                        <!--android:textSize="14sp"-->
+                        <!--tools:ignore="RtlHardcoded" />-->
+                <!--</LinearLayout>-->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/grayc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="职位"
+                        android:textColor="@android:color/black" />
+
+                    <EditText
+                        android:id="@+id/edit_auir_post"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical|right"
+                        android:hint="请填写"
+                        android:inputType="text"
+                        android:paddingRight="14dp"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        tools:ignore="RtlHardcoded" />
+                </LinearLayout>
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1px"-->
+                    <!--android:background="@color/grayc" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:paddingLeft="8dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="所在城市"-->
+                        <!--android:textColor="@android:color/black" />-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/edit_auir_position"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:background="@null"-->
+                        <!--android:gravity="center_vertical|right"-->
+                        <!--android:hint="请填写"-->
+                        <!--android:inputType="text"-->
+                        <!--android:paddingRight="14dp"-->
+                        <!--android:focusable="false"-->
+                        <!--android:singleLine="true"-->
+                        <!--android:textSize="14sp"-->
+                        <!--android:drawableRight="@mipmap/ic_right"-->
+                        <!--android:drawablePadding="4dp"-->
+                        <!--tools:ignore="RtlHardcoded" />-->
+                <!--</LinearLayout>-->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/grayc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="地址"
+                        android:textColor="@android:color/black" />
+
+                    <EditText
+                        android:id="@+id/edit_auir_address"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical|right"
+                        android:hint="请填写"
+                        android:inputType="text"
+                        android:paddingRight="14dp"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        tools:ignore="RtlHardcoded" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/grayc" />
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:paddingLeft="8dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:gravity="center"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:text="*是否毕业"-->
+                        <!--android:textColor="@android:color/black" />-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:gravity="center_vertical|right"-->
+                        <!--android:layout_height="match_parent">-->
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/chb_auir_status"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:paddingRight="14dp"-->
+                            <!--android:textSize="14sp" />-->
+                    <!--</LinearLayout>-->
+
+
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="联系方式"
+                android:textSize="18sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/view_linear"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="手机号"
+                        android:textColor="@android:color/black" />
+
+                    <EditText
+                        android:id="@+id/edit_auir_tel"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical|right"
+                        android:hint="请填写"
+                        android:inputType="text"
+                        android:paddingRight="14dp"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        tools:ignore="RtlHardcoded" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/grayc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="邮箱"
+                        android:textColor="@android:color/black" />
+
+                    <EditText
+                        android:id="@+id/edit_auir_email"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical|right"
+                        android:hint="请填写"
+                        android:inputType="text"
+                        android:paddingRight="14dp"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        tools:ignore="RtlHardcoded" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/graye"
+    tools:context="com.example.win.newintern3.UI.MainModule.BIntern.ComInfoActivity">
+    <include layout="@layout/toolbar_collect" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/view_bottom">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/view_linear"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/activity_vertical_margin">
+
+
+                    <ImageView
+                        android:id="@+id/im_post_info_com_icon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/ic_com_logo"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="13dp">
+
+
+
+                            <TextView
+                                android:id="@+id/tv_post_info_post_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:text="ui设计师"
+                                android:textColor="@color/gray3"
+                                android:textSize="@dimen/sp_32" />
+
+                            <TextView
+                                android:id="@+id/tv_post_info_com_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/sp_28"
+                                android:layout_marginTop="@dimen/text_view_margin"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:text="北京盛基世纪科技有限公司"
+                                android:textColor="@color/gray9" />
+
+                            <TextView
+                            android:id="@+id/tv_post_info_item"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/text_view_margin"
+                                android:textSize="@dimen/sp_28"
+                                android:text="2017年8月-2017年9月"
+                            android:textColor="@color/gray9" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_view_margin"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".034"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="薪资待遇"
+                                android:textColor="@color/gray3"
+                                android:textSize="@dimen/sp_32" />
+
+                            <TextView
+                                android:id="@+id/tv_post_info_money"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/text_view_margin"
+                                android:textSize="@dimen/sp_28"
+                                android:text="2000~4999/月"
+                                android:textColor="@color/Orange" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".033"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="招聘人数"
+                                android:textColor="@color/gray3"
+                                android:textSize="@dimen/sp_32"  />
+
+                            <TextView
+                                android:id="@+id/tv_post_info_peoplenum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/text_view_margin"
+                                android:text="10"
+                                android:textSize="@dimen/sp_28"
+                                android:textColor="@color/Orange" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".033"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="工作地点"
+                                android:textColor="@color/gray3"
+                                android:textSize="@dimen/sp_32" />
+
+                            <TextView
+                                android:id="@+id/tv_post_info_address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/text_view_margin"
+                                android:textSize="@dimen/sp_28"
+                                android:text="海淀区"
+                                android:textColor="@color/Orange" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/text_view_margin"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="4dp"
+                        android:text="招聘信息"
+                        android:textColor="@color/gray3"
+                        android:textSize="@dimen/sp_32" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_view_margin"
+                        android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_28"
+                        android:text="开始时间: "
+                        android:textColor="@color/gray9" />
+                        <TextView
+                            android:id="@+id/tv_post_info_start_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/text_view_margin"
+                            android:textSize="@dimen/sp_28"
+                            android:text="开始时间: "
+                            android:textColor="@color/gray9" />
+                        </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_view_margin"
+                        android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_28"
+                        android:text="结束时间: "
+                        android:textColor="@color/gray9" />
+                        <TextView
+                            android:id="@+id/tv_post_info_end_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/text_view_margin"
+                            android:textSize="@dimen/sp_28"
+                            android:text="结束时间: "
+                            android:textColor="@color/gray9" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/text_view_margin"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="咨询电话"
+                        android:textColor="@color/gray3"
+                        android:textSize="@dimen/sp_32" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/text_view_margin"
+                            android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/gray9"
+                            android:text="联系人:"
+                            android:textSize="@dimen/sp_28"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/tv_post_info_com_con_name"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/gray9"
+                            android:layout_marginLeft="@dimen/text_view_margin"
+                            android:text="联系人:"
+                            android:textSize="@dimen/sp_28"
+                            android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/text_view_margin"
+                            android:orientation="horizontal">
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/gray9"
+                            android:autoLink="phone"
+                            android:text="联系电话:"
+                            android:textSize="@dimen/sp_28"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/tv_post_info_com_con_phone"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/gray9"
+                            android:layout_marginLeft="@dimen/text_view_margin"
+                            android:autoLink="phone"
+                            android:text="联系电话"
+                            android:textSize="@dimen/sp_28"
+                            android:layout_height="wrap_content" />
+                            </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/text_view_margin"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="4dp"
+                        android:text="职位描述"
+                        android:textColor="@color/gray3"
+                        android:textSize="@dimen/sp_32" />
+
+                    <TextView
+                        android:id="@+id/tv_post_info_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:text="test"
+                        android:textSize="@dimen/sp_28"
+                        android:textColor="@color/gray9" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/view_linear"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_post_repost"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/buttom_common"
+                android:enabled="false"
+                android:text="职位申请"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_32" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

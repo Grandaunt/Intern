@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".UI.FourModule.EditInternInfoActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_sg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@mipmap/ic_add_com" />
+
+            <EditText
+                android:id="@+id/edit_apei_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                android:hint="公司名称"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/gray6"
+                android:textSize="@dimen/sp_32"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/graya" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_sg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@mipmap/ic_add_com" />
+
+
+            <EditText
+                android:id="@+id/edit_apei_post"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                android:hint="你的职位"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/gray6"
+                android:textSize="@dimen/sp_32"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/graya" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_sg"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@mipmap/ic_add_com" />
+
+
+            <EditText
+                android:id="@+id/edit_apei_starttime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:focusable="false"
+                android:gravity="center_vertical|left"
+                android:hint="入职时间"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/gray6"
+                android:textSize="@dimen/sp_32"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/graya" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_sg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@mipmap/ic_add_com" />
+
+
+            <EditText
+                android:id="@+id/edit_apei_endtime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:focusable="false"
+                android:gravity="center_vertical|left"
+                android:hint="离职时间"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/gray6"
+                android:textSize="@dimen/sp_32"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/graya" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_sg"
+            android:layout_marginTop="25dp"
+            android:gravity="left|center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@mipmap/ic_add_com" />
+
+            <TextView
+                android:id="@+id/tv_edit_pro_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="工作内容"
+                android:textColor="@color/gray6"
+                android:textSize="@dimen/sp_32" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@color/windows_background">
+
+            <EditText
+                android:id="@+id/edit_apei_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="start"
+                android:hint="详细描述工作内容"
+                android:minHeight="120dp"
+                android:padding="10dp"
+                android:textColor="@color/gray6"
+                android:textColorHint="@color/grayc"
+                android:textSize="@dimen/sp_28" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_apei_del"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="25dp"
+            android:background="@color/windows_background"
+            android:text="删除此工作经历"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/sp_32" />
+    </LinearLayout>
+
+
+</LinearLayout>

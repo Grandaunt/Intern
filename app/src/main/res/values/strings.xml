@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">A试习生3</string>
+    <string name="add_tag">Add Tag</string>
+    <string name="zz_player_network_invalid">网络异常，请检查后再试</string>
+</resources>

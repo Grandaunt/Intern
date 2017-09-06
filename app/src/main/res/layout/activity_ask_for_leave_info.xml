@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".UI.FourModule.AskForLeaveInfoActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请  假  人  "
+                        android:textColor="@android:color/black" />
+
+                    <EditText
+                        android:id="@+id/text_asfli_leaveofabsence"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:focusable="false"
+                        android:layout_marginRight="14dp"
+                        android:editable="false"
+                        android:gravity="center_vertical|right"
+                        android:hint="请填写"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        tools:ignore="RtlHardcoded" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/background_material_light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="实习企业  "
+                        android:textColor="@android:color/black" />
+
+                    <EditText
+                        android:id="@+id/text_asfli_company"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:focusable="false"
+                        android:layout_marginRight="14dp"
+                        android:gravity="center_vertical|right"
+                        android:hint="请填写"
+                        android:editable="false"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        tools:ignore="RtlHardcoded" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/background_material_light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开始时间  "
+                        android:textColor="@android:color/black" />
+
+                    <EditText
+                        android:id="@+id/text_asfli_starttime"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical|right"
+                        android:hint="请选择开始时间"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:paddingRight="14dp"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        tools:ignore="RtlHardcoded" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/background_material_light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="结束时间  "
+                        android:textColor="@android:color/black" />
+
+                    <EditText
+                        android:id="@+id/text_asfli_endtime"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical|right"
+                        android:hint="请选择结束时间"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:paddingRight="14dp"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        tools:ignore="RtlHardcoded" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/background_material_light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="去        向  "
+                        android:textColor="@android:color/black" />
+
+                    <EditText
+                        android:id="@+id/text_asfli_goon"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:layout_marginRight="14dp"
+                        android:gravity="center_vertical|right"
+                        android:hint="请填写去向"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        android:focusable="false"
+                        tools:ignore="RtlHardcoded" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/background_material_light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联系方式  "
+                        android:textColor="@android:color/black" />
+
+                    <EditText
+                        android:id="@+id/text_asfli_tel"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:layout_marginRight="14dp"
+                        android:gravity="center_vertical|right"
+                        android:focusable="false"
+                        android:hint="请填写联系方式"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        tools:ignore="RtlHardcoded" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请假事由"
+                android:paddingLeft="13dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="13dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/view_linear"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/text_asfli_body"
+                    android:layout_width="match_parent"
+                    android:background="@null"
+                    android:ems="150"
+                    android:textSize="14sp"
+                    android:focusable="false"
+                    android:gravity="start"
+                    android:hint="请输入请假事由"
+                    android:layout_height="wrap_content"
+                    android:minHeight="160dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/view_back"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="驳回理由"
+                    android:paddingLeft="13dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:padding="13dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/view_linear"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/text_asfli_back"
+                        android:layout_width="match_parent"
+                        android:background="@null"
+                        android:ems="150"
+                        android:textSize="14sp"
+                        android:focusable="false"
+                        android:gravity="start"
+                        android:hint=""
+                        android:layout_height="wrap_content"
+                        android:minHeight="160dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

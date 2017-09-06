@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.win.newintern3.UI.MainModule.AIntern.InWeeklyFragment">
+
+    <EditText
+        android:id="@+id/edt_fiw_work"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:gravity="start"
+        android:hint="请填写工作简述..."
+        android:paddingTop="13dp"
+        android:textSize="14sp" />
+
+</FrameLayout>

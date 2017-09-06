@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+    <!--<LinearLayout-->
+        <!--android:id="@+id/liner"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_toLeftOf="@+id/text_evaluation_time"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/riv_userinfo_icon"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/text_evaluation_name"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_marginLeft="4dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Test"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="18sp" />-->
+    <!--</LinearLayout>-->
+
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/text_evaluation_time"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:text="time"-->
+        <!--android:textColor="@color/gray9" />-->
+
+    <TextView
+        android:id="@+id/text_evaluation_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_32"
+        android:text="body" />
+
+
+</RelativeLayout>

@@ -1,0 +1,423 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/graye"
+    tools:context=".UI.MainModule.AIntern.AMainActivity">
+    <include layout="@layout/toolbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/text_view_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_linear"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_horizontal_margin"
+           >
+
+            <ImageView
+                android:id="@+id/rounded_fp_icon"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:scaleType="fitXY"
+           />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/text_fp_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="北京猫屎星球公司"
+                    android:textColor="@color/gray3"
+                    android:textSize="@dimen/sp_32" />
+
+
+                    <TextView
+                        android:id="@+id/text_fp_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12.5dp"
+                        android:text="实习时间:"
+                        android:textColor="@color/gray9" />
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/text_fp_start"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="2017.03.12"-->
+                        <!--android:textColor="@color/gray9" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="-"-->
+                        <!--android:textColor="@color/gray9" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/text_fp_end"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="2017.09.20"-->
+                        <!--android:textColor="@color/gray9"/>-->
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/text_view_margin"
+            >
+
+            <LinearLayout
+                android:id="@+id/view_fp_sigin"
+                android:clickable="true"
+                style="@style/linear_main"
+                >
+
+                <ImageView
+                    style="@style/image_main"
+                    android:src="@mipmap/ic_sign_in"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@android:color/black"
+                        android:text="签到"
+                        android:textSize="@dimen/sp_32" />
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:textColor="@color/gray9"-->
+                        <!--android:text="Sign in"-->
+                        <!--android:textSize="14dp" />-->
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_right"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view_fp_journal"
+                android:clickable="true"
+                style="@style/linear_main"
+                >
+
+                <ImageView
+                    style="@style/image_main"
+                    android:src="@mipmap/ic_journal" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@android:color/black"
+                        android:text="日志"
+                        android:textSize="@dimen/sp_32" />
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:textColor="@color/gray9"-->
+                        <!--android:text="Journal"-->
+                        <!--android:textSize="14dp" />-->
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_right"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view_fp_weekly"
+                android:clickable="true"
+                style="@style/linear_main"
+                >
+
+                <ImageView
+                    style="@style/image_main"
+                    android:src="@mipmap/ic_week_report" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@android:color/black"
+                        android:text="周报"
+                        android:textSize="@dimen/sp_32" />
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:textColor="@color/gray9"-->
+                        <!--android:text="Weekly"-->
+                        <!--android:textSize="14dp" />-->
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_right"
+                    />
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/view_fp_askforleaver"
+                android:clickable="true"
+                android:layout_marginTop="@dimen/text_view_margin"
+                style="@style/linear_main"
+                >
+
+                <ImageView
+                    style="@style/image_main"
+                    android:src="@mipmap/ic_ask_for_leave" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@android:color/black"
+                        android:text="请假"
+                        android:textSize="@dimen/sp_32" />
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:textColor="@color/gray9"-->
+                        <!--android:text="Leave"-->
+                        <!--android:textSize="14dp" />-->
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_right"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view_fp_businesstrip"
+                android:clickable="true"
+                style="@style/linear_main"
+                >
+
+                <ImageView
+                    style="@style/image_main"
+                    android:src="@mipmap/ic_on_business" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@android:color/black"
+                        android:text="出差"
+                        android:textSize="@dimen/sp_32" />
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:textColor="@color/gray9"-->
+                        <!--android:text="On business"-->
+                        <!--android:textSize="14dp" />-->
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_right"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/view_fp_questions"
+                android:clickable="true"
+                style="@style/linear_main"
+                >
+
+                <ImageView
+                    style="@style/image_main"
+                    android:src="@mipmap/ic_questions_and_answers" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@android:color/black"
+                        android:text="问答"
+                        android:textSize="@dimen/sp_32" />
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:textColor="@color/gray9"-->
+                        <!--android:text="Questions and answers"-->
+                        <!--android:textSize="14dp" />-->
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_right"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view_fp_leave_office"
+                android:clickable="true"
+                android:layout_marginTop="@dimen/text_view_margin"
+                style="@style/linear_main"
+                >
+
+                <ImageView
+                    style="@style/image_main"
+                    android:src="@mipmap/ic_leave_offer" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@android:color/black"
+                        android:text="申请离职"
+                        android:textSize="@dimen/sp_32" />
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:textColor="@color/gray9"-->
+                    <!--android:text="Questions and answers"-->
+                    <!--android:textSize="14dp" />-->
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_right"
+                    />
+            </LinearLayout>
+             <View
+                 android:layout_width="wrap_content"
+                 android:layout_height="40dp"
+                 />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

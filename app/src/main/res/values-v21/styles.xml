@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="AppTheme" parent="BaseAppTheme">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+    </style>
+    <style name="AppTheme.NoStatus">
+        <!-- translucent system bars -->
+        <!--状态栏-->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="Test" parent="android:Theme.Material.Light.NoActionBar" >
+        <item name="android:colorPrimaryDark">@color/material_deep_teal_500</item>
+        <item name="android:textColorSecondaryInverse">@color/abc_search_url_text</item>
+    </style>
+    <style name="App.Toolbar.Transparent">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:colorControlNormal">@color/colorPrimary</item>
+
+    </style>
+</resources>

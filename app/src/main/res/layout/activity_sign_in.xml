@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.example.win.newintern3.UI.MainModule.AIntern.SignInActivity">
+    <include layout="@layout/toolbar"/>
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+       >
+        <com.example.win.newintern3.Widgets.DatePicker
+            android:id="@+id/date_asi_sign_in"
+            android:layout_width="match_parent"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:layout_height="wrap_content"/>
+
+    <!--android:background="@drawable/login_in_button"-->
+    <!--style="?android:attr/borderlessButtonStyle"-->
+    <ImageButton
+        android:id="@+id/btn_asi_sign_in"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:scaleType="fitXY"
+        android:background="@null"
+        android:layout_margin="40dp"
+        android:src="@mipmap/ic_signin_btn"
+        />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="10dp"
+            android:layout_gravity="bottom|center"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:src="@mipmap/im_sigin_ts"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

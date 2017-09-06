@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/bottom_nav_main"
+    android:enabled="true"
+    app:showAsAction="ifRoom"
+    android:title="首页"
+    android:icon="@mipmap/ic_menu_main"/>
+
+    <item android:id="@+id/bottom_nav_two"
+    android:enabled="true"
+    app:showAsAction="ifRoom"
+    android:title="在线学习"
+    android:icon="@mipmap/ic_menu_two"/>
+
+    <item android:id="@+id/bottom_nav_three"
+    android:enabled="true"
+    app:showAsAction="ifRoom"
+    android:title="圈子"
+    android:icon="@mipmap/ic_menu_three"/>
+
+    <item android:id="@+id/bottom_nav_four"
+    android:enabled="true"
+    app:showAsAction="ifRoom"
+    android:title="我的"
+    android:icon="@mipmap/ic_four"/>
+
+    <!--<item android:id="@+id/bottom_nav_media"-->
+    <!--android:enabled="true"-->
+    <!--app:showAsAction="ifRoom"-->
+    <!--android:title="@string/nav_media"-->
+    <!--android:icon="@drawable/ic_menu_media"/>-->
+</menu>

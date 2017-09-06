@@ -1,0 +1,185 @@
+<resources>
+
+
+    <!-- Base application theme. -->
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <!--<style name="AppTheme" parent="Theme.AppCompat.NoActionBar">-->
+    <!--</style>-->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar" >false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/black</item>
+        <item name="actionMenuTextColor">@color/colorAccent</item>
+    </style>
+    <style name="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppTheme.NoStatus">
+    </style>
+    <style name="AppTheme.StatusWhite">
+    </style>
+
+
+    <style name="AnimationFade">
+        <!-- PopupWindow 弹出的效果-->
+        <item name="android:windowEnterAnimation">@anim/in_toptobottom</item>
+        <item name="android:windowExitAnimation">@anim/out_bottomtotop</item>
+    </style>
+
+
+    <!--修改Dialog的样式-->
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="colorAccent">@color/colorPrimary</item>
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <!-- Used for the background -->
+        <!--<item name="android:background">#4CAF50</item>-->
+    </style>
+
+
+    <style name="TagGroup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="atg_isAppendMode">false</item>
+        <item name="atg_inputHint">@string/add_tag</item>
+        <item name="atg_borderColor">@color/colorPrimary</item>
+        <item name="atg_textColor">@color/colorPrimary</item>
+        <item name="atg_backgroundColor">#FFFFFF</item>
+        <item name="atg_dashBorderColor">#AAAAAA</item>
+        <item name="atg_inputHintColor">#80000000</item>
+        <item name="atg_inputTextColor">#DE000000</item>
+        <item name="atg_checkedBorderColor">@color/colorPrimary</item>
+        <item name="atg_checkedTextColor">#FFFFFF</item>
+        <item name="atg_checkedMarkerColor">#FFFFFF</item>
+        <item name="atg_checkedBackgroundColor">@color/colorPrimary</item>
+        <item name="atg_pressedBackgroundColor">#EDEDED</item>
+        <item name="atg_borderStrokeWidth">0.5dp</item>
+        <item name="atg_textSize">13sp</item>
+        <item name="atg_horizontalSpacing">8dp</item>
+        <item name="atg_verticalSpacing">4dp</item>
+        <item name="atg_horizontalPadding">12dp</item>
+        <item name="atg_verticalPadding">3dp</item>
+    </style>
+
+    <!--紧急Radio-->
+    <style name="urgentradiobutton">
+        <item name="android:button">@drawable/radio_urgent_selector</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/gray9</item>
+        <item name="android:textColor">@color/gray9</item>
+        <!--<item name="android:textColor">@drawable/radio_text_selector</item>-->
+    </style>
+    <!--普通Radio-->
+    <style name="ordinaryradiobutton">
+        <item name="android:button">@drawable/radio_ordinary_selector</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/gray9</item>
+        <item name="android:textColor">@color/gray9</item>
+        <!--<item name="android:textColor">@drawable/radio_text_selector</item>-->
+    </style>
+
+
+    <style name="App" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="App.Toolbar">
+        <item name="android:id">@id/toolbar</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+    <style name="App.Toolbar.Transparent">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+    <style name="AppTheme.Toolbar">
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="android:actionMenuTextColor">#666</item>
+        <item name="android:textColorPrimary">#444</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="AppTheme.Toolbar.Popup">
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+
+    </style>
+    <style name="ThemeOverlay.AppCompat.Dark" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+    <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+    <!-- 自定义仿IOS的ActionSheet底部Dialog的样式 ，有模糊效果 -->
+    <style name="ActionSheetDialogStyle">
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+    </style>
+    <style name="linear_main" >
+        <item name="android:layout_width" >match_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_marginTop">0.5dp</item>
+        <item name="android:padding">15dp</item>
+    </style>
+    <style name="image_main" >
+        <item name="android:layout_width" >32.5dp</item>
+        <item name="android:layout_height">32.5dp</item>
+    </style>
+    <style name="NormalTextStyle">
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SmallTextStyle" parent="NormalTextStyle">
+        <item name="android:textSize">@dimen/small_text_size</item>
+    </style>
+
+</resources>

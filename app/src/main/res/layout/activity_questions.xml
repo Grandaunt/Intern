@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.example.win.newintern3.UI.MainModule.AIntern.QuestionsActivity">
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@color/grayb"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:background="@color/white"
+                    android:layout_marginTop="0.2dp"
+                    android:layout_marginBottom="0.2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="标题"
+                        android:textColor="@android:color/black" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+
+                    <EditText
+                        android:id="@+id/edt_aq_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:textColorHint="@color/grayb"
+                        android:textColor="@color/gray5"
+                        android:hint="请填写问题标题"
+                        android:gravity="center_vertical|right"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_height="wrap_content"
+                android:background="@color/grayb"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="0.2dp"
+                    android:layout_marginBottom="0.2dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:padding="15dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="问题正文"
+                        android:paddingBottom="13dp"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:background="@color/grayb" />
+
+
+                    <EditText
+                        android:id="@+id/edt_aq_body"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="start"
+                        android:hint="问题详情，10-150字"
+                        android:minHeight="160dp"
+                        android:paddingTop="13dp"
+                        android:textColorHint="@color/grayb"
+                        android:textColor="@color/gray5"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_height="wrap_content"
+                android:background="@color/grayb"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="0.2dp"
+                    android:layout_marginBottom="0.2dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:padding="15dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="紧急程度"
+                        android:paddingBottom="13dp"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:background="@color/grayb" />
+
+
+                    <RadioGroup
+                        android:id="@+id/radio_urgent"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/radio1"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="紧急问题"
+                            android:checked="true"
+                            android:textColor="@color/colorPrimary"
+                            style="@style/urgentradiobutton"
+                            android:layout_height="30dp" />
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:text="普通问题"
+                            android:id="@+id/radio2"
+                            android:layout_weight="1"
+                            style="@style/ordinaryradiobutton"
+                            android:layout_height="30dp" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--<Button-->
+        <!--android:id="@+id/btn_aq_submit"-->
+        <!--style="?android:attr/borderlessButtonStyle"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="52dp"-->
+        <!--android:layout_margin="32dp"-->
+        <!--android:background="@drawable/login_in_button"-->
+        <!--android:text="提交问题"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textSize="20sp" />-->
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
