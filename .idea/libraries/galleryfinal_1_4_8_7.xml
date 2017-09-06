@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="galleryfinal-1.4.8.7">
+    <CLASSES>
+      <root url="file://D:/Android_SDK/.android/build-cache/18e1b6518ae363fce1253882b6f8d37993d4c401/output/res" />
+      <root url="jar://D:/Android_SDK/.android/build-cache/18e1b6518ae363fce1253882b6f8d37993d4c401/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.finalteam/galleryfinal/1.4.8.7/86b91d8ba4a62bf515c0e345aa48cd9f744930de/galleryfinal-1.4.8.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
